@@ -6,7 +6,9 @@
 package br.edu.infnet.appSales.model.tests;
 
 import br.edu.infnet.appSales.model.domain.Apartment;
+import br.edu.infnet.appSales.model.domain.ApartmentType;
 import br.edu.infnet.appSales.model.domain.Commerce;
+import br.edu.infnet.appSales.model.domain.CommerceType;
 import br.edu.infnet.appSales.model.domain.House;
 import br.edu.infnet.appSales.model.domain.Situation;
 import br.edu.infnet.appSales.model.exceptions.EmptyAddressException;
@@ -47,34 +49,61 @@ public class PropertyTest {
             System.out.println(e.getMessage());
         }
         
-        Apartment apartment1 = new Apartment();
+        Apartment apartment1 = new Apartment(1, 105, "DE PAOLLI", 3, 2, 1975, 1250.5, ApartmentType.DEFAULT);
+             
         
         try {
+            apartment1.setAddress("Praça henrique gonzales, 150");
+            apartment1.setNeighborhood("Tomas Coelho");
+            apartment1.setCity("Rio de Janeiro");
+            apartment1.setDescription("casa de vila");
+            apartment1.setTotalArea(50);
+            apartment1.setPropertyValue(200000);
+            apartment1.setSituation(Situation.FOR_SALE);
             System.out.println(apartment1);
         } catch (EmptySituationException | EmptyAddressException e) {
             System.out.println(e.getMessage());
             throw new EmptySituationException(e.getMessage());
         }
         
-        Apartment apartment2 = new Apartment();
+        Apartment apartment2 = new Apartment(1, 105, "TOWER OF SUN", 3, 2, 1975, 1250.5, ApartmentType.DEFAULT);
         
         try {
+            apartment2.setAddress("");
+            apartment2.setNeighborhood("Tomas Coelho");
+            apartment2.setCity("Rio de Janeiro");
+            apartment2.setDescription("casa de vila");
+            apartment2.setTotalArea(50);
+            apartment2.setPropertyValue(200000);
             System.out.println(apartment2);
         } catch (EmptySituationException e) {
             System.out.println(e.getMessage());
         }
         
-        Commerce commerce1 = new Commerce();
+        Commerce commerce1 = new Commerce(1, 1500, "LOJA A", 0, 0, 1927, 750, CommerceType.STORE);
         
         try {
+            commerce1.setAddress("Praça henrique gonzales, 150");
+            commerce1.setNeighborhood("Centro");
+            commerce1.setCity("Rio de Janeiro");
+            commerce1.setDescription("Store");
+            commerce1.setTotalArea(50);
+            commerce1.setPropertyValue(200000);
+            commerce1.setSituation(Situation.FOR_SALE);
             System.out.println(commerce1);
         } catch (EmptySituationException | EmptyAddressException e) {
             System.out.println(e.getMessage());
         }
         
-        Commerce commerce2 = new Commerce();
+        Commerce commerce2 = new Commerce(15, 1501, "BUILD ENTERPRISE", 0, 0, 2000, 2550, CommerceType.COMMERCIAL_ROOM);
         
         try {
+            commerce2.setAddress("");
+            commerce2.setNeighborhood("Centro");
+            commerce2.setCity("Rio de Janeiro");
+            commerce2.setDescription("Commercial room");
+            commerce2.setTotalArea(50);
+            commerce2.setPropertyValue(200000);
             System.out.println(commerce2);
         } catch (EmptySituationException | EmptyAddressException e) {
             System.out.println(e.getMessage());

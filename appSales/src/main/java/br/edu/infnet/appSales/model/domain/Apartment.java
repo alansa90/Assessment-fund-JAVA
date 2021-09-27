@@ -23,7 +23,19 @@ public class Apartment extends Property {
    
    private List<Apartment> apartments;
 
-
+   public Apartment(int floor,int number, String buildingName,int rooms,int parkingSpaces,int yearConstruction, double condominiumValue, ApartmentType apartmentType){
+       this.floor = floor;
+       this.number = number;
+       this.buildingName = buildingName;
+       this.rooms = rooms;
+       this.parkingSpaces = parkingSpaces;
+       this.yearConstruction = yearConstruction;
+       this.condominiumValue = condominiumValue;
+       this.apartmentType = apartmentType;
+       
+   }
+       
+   
     public int getFloor() {
         return floor;
     }

@@ -10,7 +10,4 @@ package br.edu.infnet.appSales.model.domain;
  * @author Alan Sá
  */
 public class Sale {
-//    private Date date;
-//    private String commission;
-//    private String 
 }
