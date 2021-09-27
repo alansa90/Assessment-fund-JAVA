@@ -24,7 +24,7 @@ public class PropertyTest {
     public static void main(String[] args) {
             House house1 = new House(44,2,0,2017,1);
         try {
-            house1.setAddress("Praça henrique gonzales, 150");
+            house1.setAddress("Praça henrique, 10");
             house1.setNeighborhood("Tomas Coelho");
             house1.setCity("Rio de Janeiro");
             house1.setDescription("casa de vila");
@@ -53,10 +53,10 @@ public class PropertyTest {
              
         
         try {
-            apartment1.setAddress("Praça henrique gonzales, 150");
+            apartment1.setAddress("Praça gonzales, 10");
             apartment1.setNeighborhood("Tomas Coelho");
             apartment1.setCity("Rio de Janeiro");
-            apartment1.setDescription("casa de vila");
+            apartment1.setDescription("apartment");
             apartment1.setTotalArea(50);
             apartment1.setPropertyValue(200000);
             apartment1.setSituation(Situation.FOR_SALE);
@@ -72,9 +72,9 @@ public class PropertyTest {
             apartment2.setAddress("");
             apartment2.setNeighborhood("Tomas Coelho");
             apartment2.setCity("Rio de Janeiro");
-            apartment2.setDescription("casa de vila");
+            apartment2.setDescription("apartment");
             apartment2.setTotalArea(50);
-            apartment2.setPropertyValue(200000);
+            apartment2.setPropertyValue(100000);
             System.out.println(apartment2);
         } catch (EmptySituationException e) {
             System.out.println(e.getMessage());
@@ -83,12 +83,12 @@ public class PropertyTest {
         Commerce commerce1 = new Commerce(1, 1500, "LOJA A", 0, 0, 1927, 750, CommerceType.STORE);
         
         try {
-            commerce1.setAddress("Praça henrique gonzales, 150");
+            commerce1.setAddress("Praça gonzales, 15");
             commerce1.setNeighborhood("Centro");
             commerce1.setCity("Rio de Janeiro");
             commerce1.setDescription("Store");
             commerce1.setTotalArea(50);
-            commerce1.setPropertyValue(200000);
+            commerce1.setPropertyValue(2000000);
             commerce1.setSituation(Situation.FOR_SALE);
             System.out.println(commerce1);
         } catch (EmptySituationException | EmptyAddressException e) {
@@ -103,7 +103,7 @@ public class PropertyTest {
             commerce2.setCity("Rio de Janeiro");
             commerce2.setDescription("Commercial room");
             commerce2.setTotalArea(50);
-            commerce2.setPropertyValue(200000);
+            commerce2.setPropertyValue(5000000);
             System.out.println(commerce2);
         } catch (EmptySituationException | EmptyAddressException e) {
             System.out.println(e.getMessage());
