@@ -10,5 +10,21 @@ package br.edu.infnet.appSales.model.domain;
  * @author Alan Sá
  */
 public enum ApartmentType {
+    DEFAULT("Default"),
+    KITNET("Kitnet"),
+    LOFT("Loft"),
+    STUDIO("Studio"),
+    DUPLEX("Duplex"),
+    TRIPLEX("Triplex"),
+    PENTHOUSE("Penthouse");
     
+    private String description;
+    
+    ApartmentType(String description) {
+        this.description = description;
+    }
+    
+    public String getDescription() {
+        return this.description;
+    }
 }

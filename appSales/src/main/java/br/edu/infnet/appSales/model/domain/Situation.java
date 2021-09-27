@@ -11,10 +11,7 @@ package br.edu.infnet.appSales.model.domain;
  */
 public enum Situation {
     FOR_SALE("For Sale"),
-    FOR_RENT("For Rent"),
-    FOR_SALE_OR_RENT("For Sale or Rent"),
-    SOLD("Sold"),
-    RENTED("Rented");
+    SOLD("Sold");
     
     private String description;
     

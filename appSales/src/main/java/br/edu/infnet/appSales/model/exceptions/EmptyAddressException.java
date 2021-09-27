@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.edu.infnet.appSales.model.domain;
+package br.edu.infnet.appSales.model.exceptions;
 
 /**
  *
  * @author Alan Sá
  */
-public class Sale {
-//    private Date date;
-//    private String commission;
-//    private String 
+public class EmptyAddressException extends Exception{
+    public EmptyAddressException(String message) {
+        super(message);
+    }
 }
