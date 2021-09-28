@@ -48,9 +48,14 @@ public abstract class Property {
         return address;
     }
 
-    public void setAddress(String address) {
+    public void setAddress(String address) thorws EmptyAddressException {
+        if (address == "") {
+            throw new EmptyAddressException("The address cannot be empty");
+        }
         this.address = address;
     }
+
+    public
 
     public int getId() {
         return id;
@@ -104,7 +109,10 @@ public abstract class Property {
         return situation;
     }
 
-    public void setSituation(Situation situation) {
+    public void setSituation(Situation situation) throws EmptySituationException {
+        if (situation == "") {
+            throw new EmptySituationException("The situation cannot be empty");
+        }
         this.situation = situation;
     }
     
