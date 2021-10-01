@@ -5,37 +5,30 @@
  */
 package br.edu.infnet.appSales.model.domain;
 
-import java.util.List;
-
 /**
  *
  * @author Alan Sá
  */
 public class Apartment extends Property {
-   private int floor;
-   private int number;
-   private String buildingName;
-   private int rooms;
-   private int parkingSpaces;
-   private int yearConstruction;
-   private double condominiumValue;
-   private ApartmentType apartmentType;
-   
-   private List<Apartment> apartments;
+  private int floor;
+  private int number;
+  private String buildingName;
+  private int rooms;
+  private int parkingSpaces;
+  private int yearConstruction;
+  private double condominiumValue;
+  private ApartmentType apartmentType;
 
-   public Apartment(int floor,int number, String buildingName,int rooms,int parkingSpaces,int yearConstruction, double condominiumValue, ApartmentType apartmentType){
-       this.floor = floor;
-       this.number = number;
-       this.buildingName = buildingName;
-       this.rooms = rooms;
-       this.parkingSpaces = parkingSpaces;
-       this.yearConstruction = yearConstruction;
-       this.condominiumValue = condominiumValue;
-       this.apartmentType = apartmentType;
-       
-   }
-       
-   
+  public Apartment(int floor,int number, String buildingName,int rooms,int parkingSpaces,int yearConstruction, double condominiumValue, ApartmentType apartmentType){
+      this.floor = floor;
+      this.number = number;
+      this.buildingName = buildingName;
+      this.rooms = rooms;
+      this.parkingSpaces = parkingSpaces;
+      this.yearConstruction = yearConstruction;
+      this.condominiumValue = condominiumValue;
+      this.apartmentType = apartmentType; 
+	}   
     public int getFloor() {
         return floor;
     }
@@ -129,13 +122,5 @@ public class Apartment extends Property {
         sb.append(";");
         sb.append(apartmentType);
         return super.toString(); 
-    }
-   
-   
-   
-   @Override
-   public List<Apartment> listProperties() {
-       return apartments;
-   }
-   
+    }   
 }

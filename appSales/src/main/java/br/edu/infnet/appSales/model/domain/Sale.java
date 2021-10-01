@@ -19,6 +19,7 @@ public class Sale {
     private LocalDateTime date;
     private Client client;
     private Property property;
+    private List<Property> properties;
 
     public Sale() {
         date = LocalDateTime.now();

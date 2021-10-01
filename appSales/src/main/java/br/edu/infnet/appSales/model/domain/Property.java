@@ -116,7 +116,6 @@ public abstract class Property {
         this.situation = situation;
     }
     
-       
     @Override 
     public String toString() {
         StringBuilder sb = new StringBuilder();

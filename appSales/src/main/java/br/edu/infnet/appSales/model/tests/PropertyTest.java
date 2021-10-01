@@ -50,8 +50,7 @@ public class PropertyTest {
         }
         
         Apartment apartment1 = new Apartment(1, 105, "DE PAOLLI", 3, 2, 1975, 1250.5, ApartmentType.DEFAULT);
-             
-        
+
         try {
             apartment1.setAddress("Praça gonzales, 10");
             apartment1.setNeighborhood("Tomas Coelho");

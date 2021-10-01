@@ -18,8 +18,6 @@ public class House extends Property {
     private int yearConstruction;
     private int floors;
     
-    private List<House> houses;
-
     public House(float buildingArea, int rooms, int parkingSpaces, int yearConstruction, int floors) {
         this.buildingArea = buildingArea;
         this.rooms = rooms;

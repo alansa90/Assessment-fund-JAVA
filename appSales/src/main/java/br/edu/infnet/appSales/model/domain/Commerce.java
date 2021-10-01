@@ -12,29 +12,29 @@ import java.util.List;
  * @author alkin
  */
 public class Commerce extends Property {
-   private int floor;
-   private int number;
-   private String buildingName;
-   private int parkingSpaces;
-   private int yearConstruction;
-   private double condominiumValue;
-   private CommerceType commerceType;
-   
-   public Commerce (int floor, int number, String buildingName, int rooms, int parkingSpaces, int yearConstruction, double condominiumValue, CommerceType commerceType) {
+  private int floor;
+  private int number;
+  private String buildingName;
+  private int parkingSpaces;
+  private int yearConstruction;
+  private double condominiumValue;
+  private CommerceType commerceType;
+
+  public Commerce (int floor, int number, String buildingName, int rooms, int parkingSpaces, int yearConstruction, double condominiumValue, CommerceType commerceType) {
         this.floor = floor;
         this.number = number;
         this.buildingName = buildingName;
         this.parkingSpaces = parkingSpaces;
         this.yearConstruction = yearConstruction;
         this.commerceType = commerceType;      
-   }
-   
-   private List<Commerce> commerces;
-   
-   @Override
-   public List<Commerce> listProperties() {
-       return commerces;
-   }
+  }
+  
+  private List<Commerce> commerces;
+  
+  @Override
+  public List<Commerce> listProperties() {
+      return commerces;
+  }
 
     public int getFloor() {
         return floor;
@@ -91,7 +91,7 @@ public class Commerce extends Property {
     public void setCommerceType(CommerceType commerceType) {
         this.commerceType = commerceType;
     }
-   
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
