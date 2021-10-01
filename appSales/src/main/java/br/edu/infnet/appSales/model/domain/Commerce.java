@@ -29,7 +29,6 @@ public class Commerce extends Property {
         this.commerceType = commerceType;      
   }
   
-  private List<Commerce> commerces;
   
   @Override
   public List<Commerce> listProperties() {
@@ -94,22 +93,22 @@ public class Commerce extends Property {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        
-        
+      StringBuilder sb = new StringBuilder();
+
         sb.append(floor);
-	sb.append(";");
-	sb.append(number);
-	sb.append(";");
+				sb.append(";");
+				sb.append(number);
+				sb.append(";");
         sb.append(buildingName);
-	sb.append(";");
+				sb.append(";");
         sb.append(parkingSpaces);
-	sb.append(";");
+				sb.append(";");
         sb.append(yearConstruction);
-	sb.append(";");
+				sb.append(";");
         sb.append(condominiumValue);
         sb.append(";");
         sb.append(commerceType);
+
         return super.toString(); 
     }
 }

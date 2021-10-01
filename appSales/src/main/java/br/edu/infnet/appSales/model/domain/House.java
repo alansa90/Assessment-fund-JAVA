@@ -71,22 +71,19 @@ public class House extends Property {
         return houses;
     }
     
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        
-        
-        sb.append(floors);
-	sb.append(";");
-	sb.append(rooms);
-	sb.append(";");
-        sb.append(buildingArea);
-	sb.append(";");
-        sb.append(parkingSpaces);
-	sb.append(";");
-        sb.append(yearConstruction);
-        return super.toString(); 
-    }
-    
-    
+	@Override
+  public String toString() {
+		StringBuilder sb = new StringBuilder();
+  
+		sb.append(floors);
+		sb.append(";");
+		sb.append(rooms);
+		sb.append(";");
+  	sb.append(buildingArea);
+		sb.append(";");
+  	sb.append(parkingSpaces);
+		sb.append(";");
+  	sb.append(yearConstruction);
+  	return super.toString(); 
+  }
 }

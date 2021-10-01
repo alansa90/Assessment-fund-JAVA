@@ -5,6 +5,7 @@
  */
 package br.edu.infnet.appSales.model.domain;
 
+
 /**
  *
  * @author Alan Sá
@@ -93,34 +94,31 @@ public class Apartment extends Property {
         this.apartmentType = apartmentType;
     }
 
-    public List<Apartment> getApartments() {
+		@Override
+		public List<Apartment> listProperties() {
         return apartments;
-    }
-
-    public void setApartments(List<Apartment> apartments) {
-        this.apartments = apartments;
     }
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        
-        
-        sb.append(floor);
-	sb.append(";");
-	sb.append(number);
-	sb.append(";");
-        sb.append(buildingName);
-	sb.append(";");
-	sb.append(rooms);
-	sb.append(";");
-        sb.append(parkingSpaces);
-	sb.append(";");
-        sb.append(yearConstruction);
-	sb.append(";");
-        sb.append(condominiumValue);
-        sb.append(";");
-        sb.append(apartmentType);
-        return super.toString(); 
+      StringBuilder sb = new StringBuilder();
+
+      sb.append(floor);
+			sb.append(";");
+			sb.append(number);
+			sb.append(";");
+    	sb.append(buildingName);
+			sb.append(";");
+			sb.append(rooms);
+			sb.append(";");
+    	sb.append(parkingSpaces);
+			sb.append(";");
+    	sb.append(yearConstruction);
+			sb.append(";");
+    	sb.append(condominiumValue);
+    	sb.append(";");
+    	sb.append(apartmentType);
+
+      return super.toString(); 
     }   
 }
